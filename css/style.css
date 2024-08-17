@@ -1,186 +1,245 @@
 html {
-    font-size: 14px;
+	font-size: 14px;
 
 }
 body {
-    font-family: 'Montserrat', sans-serif;
-    color: #1E1E1E;
-    margin: 0;
-}
-
-.container{
-    max-width: 1170px;
-    margin: 0 auto;
+	font-family: 'Montserrat', sans-serif;
+	color: #1E1E1E;
+	margin: 0;
 }
 
 /* Typography */
 
 h1 {
-    font-size: 2.3rem;
-    color: #A96500; 
-    font-family: 'Dosis', sans-serif;
-    font-weight: 200;
-    text-align: center;
+	font-size: 2.3rem;
+	color: #A96500; 
+	font-family: 'Dosis', sans-serif;
+	font-weight: 200;
+	text-align: center;
 }
 
 h2 {
-    font-size: 2.1rem;
-    font-family: 'Dosis', sans-serif;
-    font-weight: 700;
+	font-size: 2.1rem;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 700;
 }
 
 h3 {
-    font-size: 1.8rem;
-    font-family: 'Dosis', sans-serif;
-    font-weight: 700;
-    margin: 1rem 0;
+	font-size: 1.8rem;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 700;
+	margin: 1rem 0;
 }
 
-/* Lists and anchors */
+/* Lists and general anchors */
 
 ul{
-    list-style-type: none;
-    padding: 0;
+	list-style-type: none;
+	padding: 0;
 }
 
 ul li a, a{
-    text-decoration: none;
+	text-decoration: none;
 }
 
 a {
-    color: #757575;
+	color: #757575;
 }
 
 /* Header */
-nav.menu ul li a {
-    color: #1E1E1E;
-    font-weight: 700;
+
+header {
+	background: #ffffffb0;
+	backdrop-filter: blur(10px);
+}
+nav.navbar ul.navbar-nav li.nav-item a.nav-link {
+	color: #2d2d2d;
+}
+nav.navbar ul.navbar-nav li.nav-item a {
+	position: relative;
+}
+nav.navbar ul.navbar-nav li.nav-item a:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 1px;
+	bottom: 0;
+	left: 0;
+	background-color: #A96500;
+	transform-origin: bottom right;
+	transition: transform .25s ease-out;
+}
+nav.navbar ul.navbar-nav li.nav-item a:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+nav.navbar ul.navbar-nav li.nav-item a.nav-link.active {
+	color: #A96500;
 }
 
 /* Principal content */
 
 img.banner-desktop {
-    width: 100%;
+	width: 100%;
 }
 
 div#intro-text-block {
-    background: #A96500; 
+	background: #A96500; 
 }
 
 div#intro-text-block .intro-text-content, div#intro-text-block .intro-text-content h1 {
-    color: #fff;
+	color: #fff;
 }
 
 div#highlights-block section.highlights-content.container h2{
-    font-weight: 500;
-    text-align: center;
+	font-weight: 500;
+	text-align: center;
 }
 
 div#highlights-block .hl-content {
-    background: #F6F6F6;
+	background: #F6F6F6;
 }
 
 .hl-content label {
-    color: #fff;
-    font-weight: 700;
-    font-size: 12px;
-    background: #477042;
-    padding: 2px 10px;
+	color: #fff;
+	font-weight: 700;
+	font-size: 12px;
+	background: #477042;
+	padding: 2px 10px;
 }
 
 div#frase-block{
-    .frase-content{
-        background-image: url(/images/home/fixed-bg/banner-fixed.png);
-        height: 230px;
-        background-attachment: fixed;
-        background-position: center;
-    }
+	.frase-content{
+		background-image: url(/images/home/fixed-bg/banner-fixed.png);
+		height: 230px;
+		background-attachment: fixed;
+		background-position: center;
+	}
 }
 
 div#frase-block p {
-    color: #fff;
-    max-width: 60%;
-    margin: 0 auto;
-    text-align: center;
+	color: #fff;
+	max-width: 60%;
+	margin: 0 auto;
+	text-align: center;
 }
 div#frase-block p span{
-    font-weight: 600;
-    display: block;
+	font-weight: 600;
+	display: block;
 }
 
 div#subscribe-block {
-    text-align: center;
+	text-align: center;
 }
 
 .subscribe-content p {
-    font-family: 'Dosis', sans-serif;
-    font-size: 1.2rem;
+	font-family: 'Dosis', sans-serif;
+	font-size: 1.2rem;
 }
 
 .audiovisual{
-    text-align: center;
+	text-align: center;
 }
 
 .contact-items i {
-    color: #477042;
+	color: #477042;
 }
 
 /* FOOTER */
 
 .social-media-content.container {
-    border-top: 1px solid #AAAAAA;
-    text-align: center;
+	border-top: 1px solid #AAAAAA;
+	text-align: center;
 }
 
 .social-media-content p {
-    font-size: 1.1rem;
-    letter-spacing: 6px;
-    color: #aaa;
+	font-size: 1.1rem;
+	letter-spacing: 6px;
+	color: #aaa;
 }
 
 .social-media-content p a{
-    font-size: 1.1rem;
-    letter-spacing: 6px;
-    color: #aaa;
-    font-size: 28px;
-    width: 50px;
-    display: inline-block;
-    border: 1px solid #808080;
-    height: 50px;
-    line-height: 50px;
-    border-radius: 100px;
+	font-size: 1.1rem;
+	letter-spacing: 6px;
+	color: #aaa;
+	font-size: 28px;
+	width: 50px;
+	display: inline-block;
+	border: 1px solid #808080;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 100px;
 }
 
 .social-media-content p a i{
-    color:#757575;
+	color:#757575;
 }
 
 footer .footer-info{
-    background-color: #477042;
-    color: #fff;
+	background-color: #477042;
+	color: #fff;
 }
 
 footer .footer-artelatam{
-    .footer-text img {
-        max-width: 100px;
-    }
+	.footer-text img {
+		max-width: 100px;
+	}
 }
 
 .newsletter-artelatam h3 {
-    font-size: 1.1rem;
+	font-size: 1.1rem;
 }
 
 footer .copyright {
-    text-align: center;
-    font-weight: 500;
-    font-size: 12px;
+	text-align: center;
+	font-weight: 500;
+	font-size: 12px;
 }
 
 /* Buttons */
 
 button.btn, input[type="submit"] {
-    color: #fff;
-    background: #1E1E1E;
-    border: 0;
-    padding: 10px 35px;
+	color: #fff;
+	background: #1E1E1E;
+	border: 0;
+	padding: 10px 35px;
+}
+
+@media screen and (max-width: 992px){
+
+	/* Header */
+
+	header{
+	}
+
+	nav.navbar {
+		padding: 0;
+	}
+	nav.navbar .container {
+		padding: 0;
+	}
+	nav.navbar button.navbar-toggler {
+		background: #477042;
+		border-radius: 0;
+		height: 60px;
+		width: 60px;
+	}
+	nav.navbar span.navbar-toggler-icon:before {
+		font-family: 'Font Awesome 6 Free';
+		content: '\f0c9';
+		font-size: 25px;
+		font-weight: 900;
+		color: #fff;
+	}
+	.navbar-toggler:focus {
+		box-shadow: none;
+	}
+	.navbar-brand img {
+		max-width: 150px;
+	}
+	ul.navbar-nav{
+		background-color: #f3f3f3;
+		box-shadow: inset 0 0 10px #e3e3e3;
+	}
 }
