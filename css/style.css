@@ -171,7 +171,7 @@ div#highlights-block .hl-content label {
 }
 
 div#frase-block{
-	background-image: url(/images/home/fixed-bg/banner-fixed.png);
+	background-image: url(../images/home/fixed-bg/banner-fixed.png);
 	height: 230px;
 	background-attachment: fixed;
 	background-position: center;
@@ -299,6 +299,10 @@ aside, section.items {
 .material iframe {
 	margin-bottom: 15px;
 	aspect-ratio: 2 / 1;
+}
+
+h1.audiovisual{
+	max-width: 90%;
 }
 
 /* Contact */
