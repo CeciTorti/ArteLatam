@@ -371,7 +371,7 @@ footer .copyright {
 
 /* Tablet + Desktop */
 
-@media screen and (min-width: 992px){
+@media only screen and (min-width: 992px){
 
 	html {
 		font-size: 16px;
@@ -497,7 +497,7 @@ footer .copyright {
 
 /* Mobile + Tablet */
 
-@media screen and (max-width: 992px){
+@media only screen and (max-width: 992px){
 
 	nav.navbar .container {
 		margin: 0;
