@@ -1,7 +1,3 @@
-html {
-	font-size: 14px;
-
-}
 body {
 	font-family: 'Montserrat', sans-serif;
 	color: #1E1E1E;
@@ -19,7 +15,7 @@ h1 {
 }
 
 h2 {
-	font: 700 2.1rem 'Dosis', sans-serif;
+	font: 500 2.1rem 'Dosis', sans-serif;
 }
 
 h3 {
@@ -53,18 +49,52 @@ input, select {
 	padding: 0 15px;
 }
 
+.form-floating label {
+	color: #212529;
+}
+
+.form-control:focus {
+	border-color: #878787;
+	box-shadow: 0 0 0 .2rem rgb(255 255 255 / 25%);
+}
+
 /* Buttons */
 
 button.btn, input[type="submit"] {
 	color: #fff;
 	background: #1E1E1E;
 	border: 0;
-	padding: 10px 35px;
+	padding: 15px 35px;
 }
 
 button.btn:hover, input[type="submit"]:hover {
 	background: #A96500;
 	transition: .3s;
+}
+
+:not(.btn-check)+.btn:active {
+	box-shadow: inset 0px 3px 11px #00000033;
+	background-color: #A96500;
+}
+
+/* Width */
+
+.w-width-90{
+	max-width: 90%;
+}
+
+.w-desk-730{
+	max-width: 730px;
+}
+
+/* Images */
+img {
+	max-width: 100%;
+}
+
+/* Utilities */
+p{
+	margin-bottom: 0;
 }
 
 /* Header */
@@ -81,6 +111,12 @@ nav.navbar ul.navbar-nav li.nav-item a.nav-link.active {
 nav.navbar {
 	padding: 0;
 }
+
+ul.navbar-nav{
+	background-color: #f3f3f3;
+	box-shadow: inset 0 0 10px #e3e3e3;
+}
+
 nav.navbar .container {
 	padding: 0;
 }
@@ -101,34 +137,33 @@ nav.navbar span.navbar-toggler-icon:before {
 .navbar-brand img {
 	max-width: 150px;
 }
-
-
-
-
-/* Principal content */
-
-img.banner-desktop {
-	width: 100%;
+span.navbar-toggler-icon {
+	background-image: none;
 }
+
+
+
+
+/* Home */
 
 div#intro-text-block {
 	background: #A96500; 
 }
 
-div#intro-text-block .intro-text-content, div#intro-text-block .intro-text-content h1 {
-	color: #fff;
+div#intro-text-block .py-50 {
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 div#highlights-block section.highlights-content.container h2{
 	font-weight: 500;
-	text-align: center;
 }
 
 div#highlights-block .hl-content {
-	background: #F6F6F6;
+	box-shadow: 0px 9px 12px 0px rgba(159, 159, 159, 0.32);
 }
 
-.hl-content label {
+div#highlights-block .hl-content label {
 	color: #fff;
 	font-weight: 700;
 	font-size: 12px;
@@ -137,32 +172,45 @@ div#highlights-block .hl-content {
 }
 
 div#frase-block{
-	.frase-content{
-		background-image: url(/images/home/fixed-bg/banner-fixed.png);
-		height: 230px;
-		background-attachment: fixed;
-		background-position: center;
-	}
+	background-image: url(/images/home/fixed-bg/banner-fixed.png);
+	height: 230px;
+	background-attachment: fixed;
+	background-position: center;
 }
 
-div#frase-block p {
-	color: #fff;
-	max-width: 60%;
-	margin: 0 auto;
-	text-align: center;
-}
 div#frase-block p span{
 	font-weight: 600;
 	display: block;
 }
 
-div#subscribe-block {
-	text-align: center;
+div#highlights-block .hl-content {
+	background: #F6F6F6;
 }
 
-.subscribe-content p {
+div#highlights-block article img {
+	border-radius: 10px 10px 0 0;
+}
+
+div#highlights-block .hl-content{
+	border-radius: 0 0 10px 10px;
+}
+
+div#highlights-block .hl-content a:hover{
+	color: #477042;
+	transition: .3s;
+}
+
+div#subscribe-block{
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.082);
+	max-width: 570px;
+}
+
+div#subscribe-block p{
 	font-family: 'Dosis', sans-serif;
-	font-size: 1.2rem;
+}
+
+div#subscribe-block .brands img {
+	max-width: 60%;
 }
 
 .audiovisual{
@@ -174,7 +222,6 @@ div#subscribe-block {
 }
 
 /* FOOTER */
-
 .social-media-content.container {
 	border-top: 1px solid #AAAAAA;
 }
@@ -195,6 +242,7 @@ div#subscribe-block {
 	line-height: 50px;
 	border-radius: 100px;
 }
+
 .social-media-content a:hover{
 	color: #fff;
 	transition: .3s;
@@ -220,26 +268,22 @@ footer .copyright {
 	font-size: 12px;
 }
 
-/* Mobile */
-@media screen and (max-width: 992px){
-	ul.navbar-nav{
-		background-color: #f3f3f3;
-		box-shadow: inset 0 0 10px #e3e3e3;
-	}
-}
-
-
 
 
 /* Tablet + Desktop */
 
 @media screen and (min-width: 992px){
 
-	/* Header */
+	html {
+		font-size: 16px;
+	
+	}
 
+	/* Header */
 	nav.navbar ul.navbar-nav li.nav-item a {
 		position: relative;
 	}
+
 	nav.navbar ul.navbar-nav li.nav-item a:after {
 		content: '';
 		position: absolute;
@@ -252,9 +296,26 @@ footer .copyright {
 		transform-origin: bottom right;
 		transition: transform .25s ease-out;
 	}
+
 	nav.navbar ul.navbar-nav li.nav-item a:hover:after {
 		transform: scaleX(1);
 		transform-origin: bottom left;
+	}
+
+	ul.navbar-nav {
+		background-color: transparent;
+		box-shadow: none;
+	}
+
+	/* Home */
+
+	div#highlights-block p {
+		display: -webkit-box;
+		-webkit-line-clamp: 4;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		height: 95px;
 	}
 
 	/* Footer */
@@ -264,12 +325,4 @@ footer .copyright {
 	.footer-column{
 		max-width: 370px;
 	}
-}
-
-
-
-
-
-img {
-	max-width: 100%;
 }

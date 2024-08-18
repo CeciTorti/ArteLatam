@@ -30,7 +30,7 @@
 				<div class="container flex-row-reverse flex-lg-row justify-content-end column-gap-4">
 					<a class="navbar-brand" href="../index.html"><img src="../images/identity/brand-color.png" alt="Marca ArteLatam"></a>
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
+						<span class="navbar-toggler-icon h-50"></span>
 					</button>
 					<div class="collapse navbar-collapse justify-content-lg-end" id="navbarNav">
 						<ul class="navbar-nav column-gap-4 px-3 py-3">
@@ -57,87 +57,81 @@
 
 		<!-- Principal banner -->
 		<div id="principal-banner">
-			<img src="images/home/principal-banner/banner-principal-desktop.png" class="banner-desktop" alt="Banner principal desktop">
-			<img src="images/home/principal-banner/banner-principal-mobile.png" class="banner-mobile" alt="Banner principal mobile">
+			<img src="images/home/principal-banner/banner-principal-desktop.png" class="banner-desktop d-none d-md-block w-100" alt="Banner principal desktop">
+			<img src="images/home/principal-banner/banner-principal-mobile.png" class="banner-mobile d-sm-block d-md-none" alt="Banner principal mobile">
 		</div>
 
 		<main>
 
 			<!-- Intro text -->
-			<div id="intro-text-block">
-				<div class="intro-text-content">
-					<h1>Todo lo que querés aprender sobre Arte Prehispánico Latinoamericano</h1>
-					<p>Si estudiás o simplemente te gusta conocer sobre arte precolombino, <strong>¡llegaste al lugar indicado!</strong>
+			<div id="intro-text-block" class="text-center py-5 px-4">
+				<div class="intro-text-content text-light m-auto w-desk-730">
+					<h1 class="text-light fs-1 mb-4 lh-base w-width-90 m-auto">Todo lo que querés aprender sobre Arte Prehispánico Latinoamericano</h1>
+					<p class="lh-lg">Si estudiás o simplemente te gusta conocer sobre arte precolombino, <strong>¡llegaste al lugar indicado!</strong>
 					Te invito a descubrir la rica herencia cultural de las civilizaciones que poblaron estas tierras antes de la colonización europea. Tendrás una experiencia visual inigualable llena de creatividad y significado. <strong>¡Comencemos!</strong></p>
 				</div>
 			</div>
 
 			<!-- Highlights of the week -->
-			<div id="highlights-block">
-				<section class="highlights-content container">
-					<h2>Destacados de la semana</h2>
+			<div id="highlights-block" class="container py-5 mb-5">
+					<h2 class="text-center py-4">Destacados de la semana</h2>
 					
+					<section class="highlights-content row row-gap-5 column-gap-1 flex-lg-nowrap mx-3 justify-content-center">
 					<!-- First highlight -->
-					<div class="hl-one">
-						<article>
-							<img src="images/home/highlights/home-highlight-01.png" alt="Inca cueva Argentina">
-							<div class="hl-content">
-								<label>ARGENTINA</label>
-								<h3>Inca Cueva</h3>
-								<p>Explora antiguas pinturas rupestres, testigos de civilizaciones pasadas, y sumérgete en un viaje histórico en un entorno natural impresionante.</p>
-								<a href="#"><i class="fa-solid fa-square-plus"></i>CONOCER MÁS</a>
-							</div>
-						</article>
-					</div>
+					<article class="hl-one col-lg-4">
+						<img src="images/home/highlights/home-highlight-01.png" alt="Inca cueva Argentina">
+						<div class="hl-content p-4">
+							<label class="rounded-1">ARGENTINA</label>
+							<h3>Inca Cueva</h3>
+							<p>Explora antiguas pinturas rupestres, testigos de civilizaciones pasadas, y sumérgete en un viaje histórico en un entorno natural impresionante.</p>
+							<a href="#" class="d-inline-block py-3 text-end w-100 fw-semibold"><i class="fa-solid fa-square-plus pe-2"></i>CONOCER MÁS</a>
+						</div>
+					</article>
 
 					<!-- Second highlight -->
-					<div class="hl-two">
-						<article>
-							<img src="images/home/highlights/home-highlight-02.png" alt="Quilcayhuanca Peru">
-							<div class="hl-content">
-								<label>PERÚ</label>
-								<h3>Quilcayhuanca</h3>
-								<p>Descubre los enigmas ancestrales en las impresionantes pinturas rupestres, una ventana a las historias de tiempos antiguos en un paisaje asombroso.</p>
-								<a href="#"><i class="fa-solid fa-square-plus"></i>CONOCER MÁS</a>
-							</div>
-						</article>
-					</div>
+					<article class="hl-two col-lg-4">
+						<img src="images/home/highlights/home-highlight-02.png" alt="Quilcayhuanca Peru">
+						<div class="hl-content p-4">
+							<label class="rounded-1">PERÚ</label>
+							<h3>Quilcayhuanca</h3>
+							<p>Descubre los enigmas ancestrales en las impresionantes pinturas rupestres, una ventana a las historias de tiempos antiguos en un paisaje asombroso.</p>
+							<a href="#" class="d-inline-block py-3 text-end w-100 fw-semibold"><i class="fa-solid fa-square-plus pe-2"></i>CONOCER MÁS</a>
+						</div>
+					</article>
 
 					<!-- Third highlight -->
-					<div class="hl-three">
-						<article>
-							<img src="images/home/highlights/home-highlight-03.png" alt="Códice Bodley Mexico">
-							<div class="hl-content">
-								<label>MÉXICO</label>
-								<h3>Códice Bodley</h3>
-								<p>Manuscrito pictórico, perteneciente a la cultura mixteca. Consta de dos lados. El anverso es un registro completo de la genealogía de Tilantongo a partir del siglo X.</p>
-								<a href="#"><i class="fa-solid fa-square-plus"></i>CONOCER MÁS</a>
-							</div>
-						</article>
-					</div>
-
+					<article class="hl-three col-lg-4">
+						<img src="images/home/highlights/home-highlight-03.png" alt="Códice Bodley Mexico">
+						<div class="hl-content p-4">
+							<label class="rounded-1">MÉXICO</label>
+							<h3>Códice Bodley</h3>
+							<p>Manuscrito pictórico, perteneciente a la cultura mixteca. Consta de dos lados. El anverso es un registro completo de la genealogía de Tilantongo a partir del siglo X.</p>
+							<a href="#" class="d-inline-block py-3 text-end w-100 fw-semibold"><i class="fa-solid fa-square-plus pe-2"></i>CONOCER MÁS</a>
+						</div>
+					</article>
 				</section>
+
 			</div>
+
+			<!-- END OF Highlights of the week -->
 
 		</main>
 
 		<!-- Frase block -->
-		<div id="frase-block">
-			<div class="frase-content">
-				<p>“Vinieron. Ellos tenían la Biblia y nosotros teníamos la tierra. Y nos dijeron: ‘Cierren los ojos y recen’. Y cuando abrimos los ojos, ellos tenían la tierra y nosotros teníamos la Biblia”.<span>Eduardo Galeano</span>
+		<div id="frase-block" class="frase-content d-flex align-items-center">
+
+				<p class="text-light m-auto text-center w-75 lh-lg w-desk-730">“Vinieron. Ellos tenían la Biblia y nosotros teníamos la tierra. Y nos dijeron: ‘Cierren los ojos y recen’. Y cuando abrimos los ojos, ellos tenían la tierra y nosotros teníamos la Biblia”.<span>Eduardo Galeano</span>
 				</p>
-			</div>
+
 		</div>
 
 		<!-- Subscribe block -->
-		<div id="subscribe-block">
-			<div class="subscribe-content">
-				<div class="brands">
-					<a href="#"><img src="images/home/brands/yt-logo.png" alt="YouTube logo"></a>
-					<a href="#"><img src="images/home/brands/spotify-logo.png" alt="Spotify logo"></a>
-				</div>
-				<p>Suscríbite a canales de YouTube y Spotify para <strong>aprender con especialistas</strong></p>
+		<div id="subscribe-block" class="subscribe-content text-center m-sm-auto mx-4 my-sm-5 my-5 px-4 py-5 rounded-4">
+			<div class="brands d-flex flex-wrap flex-sm-nowrap row-gap-4 mb-4 justify-content-center align-items-center">
+				<a href="#"><img src="images/home/brands/yt-logo.png" alt="YouTube logo"></a>
+				<a href="#"><img src="images/home/brands/spotify-logo.png" alt="Spotify logo"></a>
 			</div>
+			<p class="fs-5">Suscríbite a canales de YouTube y Spotify para <strong>aprender con especialistas</strong></p>
 		</div>
 
 
@@ -168,7 +162,11 @@
 							<i class="fa-solid fa-envelope fs-4"></i>
 							<h3>¡Recibe info destacada toda las semanas!</h3>
 						</div>
-						<input type="email" name="email-news" id="email-news" placeholder="Tu eMail" class="w-100 mb-2">
+						<div class="form-floating mb-3">
+							<input type="email" class="form-control w-100 mb-2" id="floatingInput" placeholder="name@example.com">
+							<label for="floatingInput">Tu eMail</label>
+						  </div>
+						<!-- <input type="email" name="email-news" id="email-news" placeholder="Tu eMail" class="w-100 mb-2"> -->
 						<button class="btn w-100">SUSCRIBIRME</button> 
 					</div>
 
