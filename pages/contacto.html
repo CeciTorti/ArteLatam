@@ -58,45 +58,53 @@
 
 		
 		
-		<main>
+		<main class="page-content contact-page my-5 mx-auto row flex-wrap">
 
 			<!-- Contact info text -->
-			<section>
-				<h1>Contacto</h1>
-				<p><strong>Si llegaste hasta aquí es porque ¡este proyecto realmente te interesa!</strong> Soy Ceci y soy una diseñadora gráfica argentina que ama el arte precolombino.</p>
-				<p>Este proyecto personal busca acercar estas maravillas a todo el mundo, de manera rápida y organizada. Si te interesa conseguir más información o te gustaría aportar, contactame a través de mis redes o escribime desde el formulario de esta página.</p>    
-				<p>¡Saludos!</p>
+			<section class="contact-first col-lg-6">
+				<h1 class="text-start mb-4 mx-3">Contacto</h1>
+				<p class="mb-4 mx-3"><strong>Si llegaste hasta aquí es porque ¡este proyecto realmente te interesa!</strong> Me llamo Ceci y soy una diseñadora gráfica argentina que ama el arte precolombino.</p>
+				<p class="mb-4 mx-3">Este proyecto personal busca acercar estas maravillas a todo el mundo, de manera rápida y organizada. Si te interesa conseguir más información o te gustaría aportar, contactame a través de mis redes o escribime desde el formulario de esta página.</p>    
+				<p class="mx-3"><strong>¡Saludos!</strong></p>
 
-				<div class="contact-items">
+				<div class="contact-items my-4 mx-3">
 					<ul>
-						<li><a href="mailto:dg.ceciliat@gmail.com"><i class="fa-solid fa-envelope"></i>dg.ceciliat@gmail.com</a></li>
-						<li><a href="https://www.instagram.com/cecitorti/" target="_blank"><i class="fa-brands fa-instagram"></i>/cecitorti</a></li>
-						<li><i class="fa-solid fa-location-dot"></i>Buenos Aires, Argentina</li>
+						<li class="mb-2"><a href="mailto:dg.ceciliat@gmail.com"><i class="fa-solid fa-envelope pe-2"></i>dg.ceciliat@gmail.com</a></li>
+						<li class="mb-2"><a href="https://www.instagram.com/cecitorti/" target="_blank"><i class="fa-brands fa-instagram pe-2"></i>/cecitorti</a></li>
+						<li class="mb-2"><i class="fa-solid fa-location-dot pe-2"></i>Buenos Aires, Argentina</li>
 					</ul>
 				</div>
 
 			</section>
 
 			<!-- Contact Form -->
-			<section>
-				<form id="contact-form">
-					<field>
+			<section class="contact-second col-lg-6">
+				<form id="contact-form" class="m-3">
+
+					<div class="form-floating mb-3">
+						<input type="text" class="form-control w-100 mb-2" id="name-lastname" placeholder="Nombre y apellido">
 						<label for="name-lastname">Nombre y apellido</label>
-						<input type="text" name="name-lastname" id="name-lastname" placeholder="María Gonzalez">
-					</field>
-					<field>
-						<label for="email">eMail</label>
-						<input type="email" name="email" id="email" placeholder="nombre@gmail.com">
-					</field>
-					<field>
+					</div>
+
+					<div class="form-floating mb-3">
+						<input type="email" class="form-control w-100 mb-2" id="email" placeholder="eMail">
+						<label for="email">Tu eMail</label>
+					</div>
+
+					<div class="form-floating mb-3">
+						<input type="text" class="form-control w-100 mb-2" id="celphone" placeholder="1112341234">
 						<label for="celphone">Celular</label>
-						<input type="text" name="celphone" id="celphone" placeholder="1112341234">
-					</field>
-					<field>
+					</div>
+
+					<div class="form-floating  mb-3">
+						<textarea class="form-control" placeholder="Escribime o consultame sobre lo que te interese!" id="message"></textarea>
 						<label for="message">Tu mensaje</label>
-						<textarea name="message" id="message" placeholder="Escribime o consultame sobre lo que te interese!"></textarea>
-					</field>
+					</div>
+
 					<input type="submit" value="ENVIAR">
+
+
+
 				</form>
 			</section>
 			

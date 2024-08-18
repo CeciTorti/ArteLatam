@@ -43,7 +43,6 @@ a {
 /* Forms */
 
 input, select {
-	height: 40px;
 	border-radius: 5px;
 	border: 0;
 	padding: 0 15px;
@@ -72,7 +71,7 @@ button.btn:hover, input[type="submit"]:hover {
 	transition: .3s;
 }
 
-:not(.btn-check)+.btn:active {
+:not(.btn-check)+.btn:active, input[type="submit"]:focus {
 	box-shadow: inset 0px 3px 11px #00000033;
 	background-color: #A96500;
 }
@@ -301,8 +300,21 @@ main h2 {
 	aspect-ratio: 2 / 1;
 }
 
+/* Contact */
+.contact-page strong {
+	display: block;
+}
+
 .contact-items i {
 	color: #477042;
+}
+form#contact-form input[type="submit"] {
+	width: 100%;
+}
+
+.contact-items a:hover {
+	color: #477042;
+	transition: .3s;
 }
 
 
@@ -369,6 +381,11 @@ footer .copyright {
 	}
 
 	/* Header */
+
+	.navbar-brand img {
+		max-width: 200px;
+	}
+
 	nav.navbar ul.navbar-nav li.nav-item a {
 		position: relative;
 	}
@@ -454,7 +471,13 @@ footer .copyright {
 	.audiovisual p{
 		max-width: 650px;
 	}
-	
+
+	/* Contact */
+
+	form#contact-form input[type="submit"] {
+		width: fit-content;
+	}
+
 	/* Footer */
 	.footer-content{
 		max-width: 970px;
