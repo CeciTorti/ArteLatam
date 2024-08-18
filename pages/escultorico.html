@@ -12,7 +12,7 @@
 		<!-- FontAwesome -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 		
-        <!-- Fonts -->
+		<!-- Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -57,60 +57,75 @@
 		</header>
 
 
-        <h1>Arte escultórico prehispánico latinoamericano</h1>
-        <section>
-            <h2>Explora por región</h2>
-            <ul>
-                <li><a href="#asur-escultorico">América del Sur</a></li>
-                <li><a href="#acentral-escultorico">América Central</a></li>
-                <li><a href="#caribe-escultorico">Caribe</a></li>
-                <li><a href="#mexico-escultorico">México</a></li>
-            </ul>
-        </section>
+		<h1 class="my-5 fs-2">Arte escultórico prehispánico latinoamericano</h1>
 
-        <main>
+		<div class="page-content escultorico-page d-flex flex-column mx-4 mx-lg-auto px-lg-4 column-gap-4">
+			<section class="items rounded-3 p-4 text-center">
+				<h2 class="mb-4">Explora por región</h2>
+				<ul class="mb-0 mt-4 d-flex flex-wrap column-gap-2 row-gap-2 justify-content-center flex-lg-nowrap">
+					<li><a href="#asur-escultorico" class="py-2 px-3 rounded-1 d-inline-block">América del Sur</a></li>
+					<li><a href="#acentral-escultorico" class="py-2 px-3 rounded-1 d-inline-block">América Central</a></li>
+					<li><a href="#caribe-escultorico" class="py-2 px-3 rounded-1 d-inline-block">Caribe</a></li>
+					<li><a href="#mexico-escultorico" class="py-2 px-3 rounded-1 d-inline-block">México</a></li>
+				</ul>
+			</section>
 
-            <!-- Seccion America del Sur-->
-            <section id="asur-escultorico">
-                <h2>América del sur</h2>
-                <div class="asur-links escultorico-links">
-                    <img src="../images/sculture-art/escultorica-americadelsur.png" alt="Chemamull Arte Mapuche Chile">
-                    <p>Descubre la riqueza de la escultura precolombina de América del Sur, donde cada pieza revela historias ancestrales y un arte milenario lleno de simbolismo y belleza.</p>
-                    <a href="#"><i class="fa-solid fa-square-plus"></i>CONOCER MÁS</a>
-                </div>
-            </section>
+			<main class="my-5">
 
-            <!-- Seccion America Central-->
-            <section id="acentral-escultorico">
-                <h2>América Central</h2>
-                <div class="acentral-links escultorico-links">
-                    <img src="../images/sculture-art/escultorica-americacentral.png" alt="Chemamull Arte Mapuche Chile">
-                    <p>Explora la escultura precolombina de América Central, donde cada obra refleja la historia y cultura de civilizaciones antiguas, llena de detalles y misticismo.</p>
-                    <a href="#"><i class="fa-solid fa-square-plus"></i>CONOCER MÁS</a>
-                </div>
-            </section>
+				<!-- Seccion America del Sur-->
+				<section id="asur-escultorico">
+					<h2 class="mb-4">América del sur</h2>
+					<div class="asur-links escultorico-links d-grid row-gap-3 column-gap-5">
+						<figure>
+							<img src="../images/sculture-art/escultorica-americadelsur.png" alt="Chemamull Arte Mapuche Chile">
+							<figcaption>Chemamüll -  Arte Mapuche - Chile</figcaption>
+						</figure>
+						<p>Descubre la riqueza de la escultura precolombina de América del Sur, donde cada pieza revela historias ancestrales y un arte milenario lleno de simbolismo y belleza.</p>
+						<a href="#" class="view-more d-inline-block py-1 text-end w-100 fw-semibold"><i class="fa-solid fa-square-plus pe-2"></i>CONOCER MÁS</a>
+					</div>
+				</section>
 
-            <!-- Seccion Caribe -->
-            <section id="caribe-escultorico">
-                <h2>Caribe</h2>
-                <div class="caribe-links escultorico-links">
-                    <img src="../images/sculture-art/escultorica-caribe.png" alt="Chemamull Arte Mapuche Chile">
-                    <p>Admira la escultura precolombina del Caribe, donde cada pieza ofrece una visión única de culturas antiguas, destacando su creatividad, espiritualidad y habilidades artísticas.</p>
-                    <a href="#"><i class="fa-solid fa-square-plus"></i>CONOCER MÁS</a>
-                </div>
-            </section>
+				<!-- Seccion America Central-->
+				<section id="acentral-escultorico">
+					<h2 class="mb-4">América Central</h2>
+					<div class="acentral-links escultorico-links d-grid row-gap-3 column-gap-5">
+						<figure>
+							<img src="../images/sculture-art/escultorica-americacentral.png" alt="Chemamull Arte Mapuche Chile">
+							<figcaption>Cerámica - El Salvador</figcaption>
+						</figure>
+						<p>Explora la escultura precolombina de América Central, donde cada obra refleja la historia y cultura de civilizaciones antiguas, llena de detalles y misticismo.</p>
+						<a href="#" class="view-more d-inline-block py-1 text-end w-100 fw-semibold"><i class="fa-solid fa-square-plus pe-2"></i>CONOCER MÁS</a>
+					</div>
+				</section>
 
-            <!-- Seccion Mexico-->
-            <section id="mexico-escultorico">
-                <h2>México</h2>
-                <div class="mexico-links escultorico-links">
-                    <img src="../images/sculture-art/escultorica-mexico.png" alt="Chemamull Arte Mapuche Chile">
-                    <p>Descubre la impresionante escultura precolombina de México, que captura la esencia de antiguas civilizaciones, mostrando maestría artesanal y profundos significados culturales en cada detalle.</p>
-                    <a href="#"><i class="fa-solid fa-square-plus"></i>CONOCER MÁS</a>
-                </div>
-            </section>            
-            
-        </main>
+				<!-- Seccion Caribe -->
+				<section id="caribe-escultorico">
+					<h2 class="mb-4">Caribe</h2>
+					<div class="caribe-links escultorico-links d-grid row-gap-3 column-gap-5">
+						<figure>
+							<img src="../images/sculture-art/escultorica-caribe.png" alt="Chemamull Arte Mapuche Chile">
+							<figcaption>Metate ceremonial - Costa Rica</figcaption>
+						</figure>
+						<p>Admira la escultura precolombina del Caribe, donde cada pieza ofrece una visión única de culturas antiguas, destacando su creatividad, espiritualidad y habilidades artísticas.</p>
+						<a href="#" class="view-more d-inline-block py-1 text-end w-100 fw-semibold"><i class="fa-solid fa-square-plus pe-2"></i>CONOCER MÁS</a>
+					</div>
+				</section>
+
+				<!-- Seccion Mexico-->
+				<section id="mexico-escultorico">
+					<h2 class="mb-4">México</h2>
+					<div class="mexico-links escultorico-links d-grid row-gap-3 column-gap-5">
+						<figure class="m-0">
+							<img src="../images/sculture-art/escultorica-mexico.png" alt="Chemamull Arte Mapuche Chile">
+							<figcaption>Cultura Olmeca - México</figcaption>
+						</figure>
+						<p>Descubre la impresionante escultura precolombina de México, que captura la esencia de antiguas civilizaciones, mostrando maestría artesanal y profundos significados culturales en cada detalle.</p>
+						<a href="#" class="view-more d-inline-block py-1 text-end w-100 fw-semibold"><i class="fa-solid fa-square-plus pe-2"></i>CONOCER MÁS</a>
+					</div>
+				</section>            
+				
+			</main>
+		</div>
 
 		<!-- Footer -->
 		<footer>

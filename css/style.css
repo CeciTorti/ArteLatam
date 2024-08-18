@@ -77,6 +77,11 @@ button.btn:hover, input[type="submit"]:hover {
 	background-color: #A96500;
 }
 
+a.view-more:hover{
+	color: #477042;
+	transition: .3s;
+}
+
 /* Width */
 
 .w-width-90{
@@ -195,11 +200,6 @@ div#highlights-block .hl-content{
 	border-radius: 0 0 10px 10px;
 }
 
-div#highlights-block .hl-content a:hover{
-	color: #477042;
-	transition: .3s;
-}
-
 div#subscribe-block{
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.082);
 	max-width: 570px;
@@ -216,25 +216,25 @@ div#subscribe-block .brands img {
 
 /* Gráfico y grabado */
 
-aside{
+aside, section.items{
 	background-color: #f6f6f6;
 }
 
-aside h2 {
+aside h2, section.items h2 {
 	font-size: 16px;
 	font-weight: 900;
 }
-aside ul li a{
+aside ul li a, section.items ul li a{
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.082);
 	background-color: #fff;
 }
-aside ul li a:hover {
+aside ul li a:hover, section.items ul li a:hover {
 	transition: .3s;
 	background-color: #477042;
 	color: #fff;
 }
 
-aside {
+aside, section.items {
 	height: fit-content;
 	min-width: 270px;
 }
@@ -268,13 +268,43 @@ main h2 {
 	transition: .3s;
 }
 
-.audiovisual{
-	text-align: center;
+/* Escultórico */
+
+.escultorico-links {
+	border-bottom: 1px solid #E3E3E3;
+	margin-bottom: 30px;
+	padding-bottom: 25px;
+}
+
+.escultorico-links figure {
+	grid-row: 2;
+}
+
+.escultorico-links figcaption{
+	font-size: 12px;
+	color: #757575;
+	padding-top: 5px;
+}
+
+.escultorico-links figure img{
+	border-radius: 10px;
+}
+
+.escultorico-links figure {
+	margin: 0 auto 1rem;
+}
+
+/* Audiovisual */
+
+.material iframe {
+	margin-bottom: 15px;
+	aspect-ratio: 2 / 1;
 }
 
 .contact-items i {
 	color: #477042;
 }
+
 
 /* FOOTER */
 .social-media-content.container {
@@ -390,6 +420,41 @@ footer .copyright {
 		text-align: left;
 	}
 
+	/* Escultórico */
+	section.items {
+		width: fit-content;
+		margin: 0 auto;
+	}
+	section.items h2 {
+		font-size: 24px;
+	}
+
+	.escultorico-links {
+		grid-template-areas:
+			'photo text'
+			'photo link';
+	}
+
+	.escultorico-links figure {
+		grid-area: photo;
+		max-width: 270px;
+	}
+
+	.escultorico-links p {
+		grid-area: text;
+		align-self: end;
+	}
+
+	.escultorico-links a.view-more{
+		grid-area: link;
+	}
+
+	/* Audiovisual */
+
+	.audiovisual p{
+		max-width: 650px;
+	}
+	
 	/* Footer */
 	.footer-content{
 		max-width: 970px;
