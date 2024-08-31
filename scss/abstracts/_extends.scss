@@ -11,7 +11,7 @@
 }
 
 %submenus{
-    background-color: $softBgColor;
+    background: linear-gradient(to bottom,$softBgColor,$lightGray);
 	height: fit-content;
 	min-width: 270px;
     ul li a{

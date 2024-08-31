@@ -1,10 +1,12 @@
+// Home
+
 div#intro-text-block {
-	background: $secondaryColor; 
+	background: linear-gradient(to bottom, $secondaryColor, $secondaryColorComplement); 
 }
 
 div#highlights-block{
-	section.highlights-content.container h2{
-		font-weight: 500;
+	img.inti-icon{
+		width: 80px;
 	}
 	.hl-content {
 		box-shadow: 0px 9px 12px 0px rgba(159, 159, 159, 0.32);
@@ -42,10 +44,14 @@ div#subscribe-block{
 	}
 	.brands img {
 		max-width: 60%;
+		&:hover {
+			transform: scale(1.1);
+			transition: .2s;
+		}
 	}
 }
 
-/* Tablet + Desktop */
+// Tablet + Desktop
 
 @media only screen and (min-width: 992px){
 

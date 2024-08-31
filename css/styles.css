@@ -3,13 +3,13 @@ a, ul li a {
   color: #808080;
 }
 
-.audiovusual-page main h2, .escultorico-page main h2, .grafico-y-grabado-page main h2 {
+.audiovisual-page main h2, .escultorico-page main h2, .grafico-y-grabado-page main h2 {
   font-size: 18px;
   font-weight: 900;
 }
 
 .escultorico-page section.items, .grafico-y-grabado-page aside {
-  background-color: #f6f6f6;
+  background: linear-gradient(to bottom, #f6f6f6, #E3E3E3);
   height: fit-content;
   min-width: 270px;
 }
@@ -217,9 +217,10 @@ footer .social-media-content a:hover {
   background-color: #A96500;
   transition: 0.3s;
   box-shadow: 0px 5px 10px #c7c7c7;
+  animation: pulse 1s;
 }
 footer .footer-info {
-  background-color: #477042;
+  background: linear-gradient(to bottom, #477042, #2c4528);
 }
 footer .footer-artelatam .footer-text img {
   max-width: 100px;
@@ -241,11 +242,11 @@ footer .copyright {
   }
 }
 div#intro-text-block {
-  background: #A96500;
+  background: linear-gradient(to bottom, #A96500, #7b2f00);
 }
 
-div#highlights-block section.highlights-content.container h2 {
-  font-weight: 500;
+div#highlights-block img.inti-icon {
+  width: 80px;
 }
 div#highlights-block .hl-content {
   box-shadow: 0px 9px 12px 0px rgba(159, 159, 159, 0.32);
@@ -285,8 +286,11 @@ div#subscribe-block p {
 div#subscribe-block .brands img {
   max-width: 60%;
 }
+div#subscribe-block .brands img:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
 
-/* Tablet + Desktop */
 @media only screen and (min-width: 992px) {
   div#highlights-block p {
     display: -webkit-box;
@@ -380,11 +384,11 @@ div#subscribe-block .brands img {
     grid-area: link;
   }
 }
-.audiovusual-page .material iframe {
+.audiovisual-page .material iframe {
   margin-bottom: 15px;
   aspect-ratio: 2/1;
 }
-.audiovusual-page h1.audiovisual {
+.audiovisual-page h1.audiovisual {
   max-width: 90%;
 }
 
