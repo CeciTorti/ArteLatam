@@ -1,0 +1,19 @@
+/* Typography */
+
+h1 {
+	font: 200 2.3rem $secondaryFont;
+	color: $secondaryColor; 
+}
+
+h2 {
+	font: 500 2.1rem $secondaryFont;
+}
+
+h3 {
+	font: 700 1.8rem $secondaryFont;
+	margin: 1rem 0;
+}
+
+p{
+	margin-bottom: 0;
+}

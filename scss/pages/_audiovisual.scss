@@ -1,0 +1,25 @@
+// Audiovisual
+
+.audiovusual-page{
+
+	main h2{
+		@extend %h2SpecialStyle;
+	}
+	.material iframe {
+		margin-bottom: 15px;
+		aspect-ratio: 2 / 1;
+	}	
+	h1.audiovisual{
+		max-width: 90%;
+	}
+}
+
+// Tablet + Desktop
+
+@media only screen and (min-width: 992px){
+
+	.audiovisual p{
+		max-width: 650px;
+	}
+
+}

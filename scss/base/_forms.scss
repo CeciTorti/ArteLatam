@@ -1,0 +1,16 @@
+/* Forms */
+
+input, select {
+	border-radius: 5px;
+	border: 0;
+	padding: 0 15px;
+}
+
+.form-floating label {
+	color: $darkGray;
+}
+
+.form-control:focus {
+	border-color: $mediumGray;
+	box-shadow: 0 0 0 .2rem rgba(255, 255, 255, 0.25);
+}

@@ -1,0 +1,55 @@
+// Footer
+
+footer{
+	.social-media-content{
+		&.container {
+			border-top: 1px solid #AAAAAA;
+		}
+		p {
+			font-size: 1.1rem;
+			letter-spacing: 6px;
+			color: $mediumGray;
+		}
+		a{
+			@include sizesAndDeco(60px,60px,100px,transparent);
+			@include borderAndColor(1px solid $mediumGray, $mediumGray);
+			font-size: 2rem;
+			display: inline-block;
+			line-height: 60px;
+			margin: 0px 10px;
+			&:hover{
+				@include borderAndColor(1px solid $secondaryColor, #fff);
+				background-color: $secondaryColor;
+				transition: .3s; 
+				box-shadow: 0px 5px 10px #c7c7c7;
+			}
+		}
+	}
+	.footer-info{
+		background-color: $primaryColor;
+	}
+	.footer-artelatam .footer-text img{
+		max-width: 100px;
+	}
+	.newsletter-artelatam h3 {
+		font-size: 1.1rem;
+	}
+	.copyright {
+		@include fontSizeWeight(12px,500);
+	}
+}
+
+// Tablet + Desktop
+
+@media only screen and (min-width: 992px){
+
+	.footer-content{
+		max-width: 970px;
+	}
+
+	.footer-column{
+		max-width: 370px;
+	}
+
+}
+

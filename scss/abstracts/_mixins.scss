@@ -1,0 +1,24 @@
+// Mixins 
+
+@mixin sizesAndDeco($widthDeco, $heightDeco,$aspectDeco,$backgroundDeco){
+    width: $widthDeco;
+    height: $heightDeco;
+    border-radius: $aspectDeco;
+    background-color: $backgroundDeco;
+}
+
+@mixin borderAndColor($borderStyleMix,$colorMix){
+    border: $borderStyleMix;
+    color: $colorMix;
+}
+
+@mixin fontSizeWeight($fontSizeMix,$fontWeightMix){
+    font-size: $fontSizeMix;
+    font-weight: $fontWeightMix;
+}
+
+@mixin sectionsMix($marginSections,$padbotSections,$borbotSections){
+    margin: $marginSections;
+    padding-bottom: $padbotSections;
+    border-bottom: $borbotSections;
+}

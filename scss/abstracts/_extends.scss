@@ -1,0 +1,26 @@
+// Extends
+
+%anchorStyle{
+    text-decoration: none;
+	color: $mediumGray;
+}
+
+%h2SpecialStyle{
+    font-size: 18px;
+	font-weight: 900;
+}
+
+%submenus{
+    background-color: $softBgColor;
+	height: fit-content;
+	min-width: 270px;
+    ul li a{
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.082);
+        background-color: #fff;
+        &:hover{
+            transition: .3s;
+            background-color: $primaryColor;
+            color: #fff;
+        }
+    }
+}

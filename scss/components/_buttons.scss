@@ -1,0 +1,21 @@
+// Buttons
+
+button.btn, input[type="submit"] {
+	@include borderAndColor(0,#fff);
+	background: $darkGray;
+	padding: 15px 35px;
+	&:hover{
+		background: $secondaryColor;
+		transition: .3s;
+	}
+}
+
+:not(.btn-check)+.btn:active, input[type="submit"]:focus {
+	box-shadow: inset 0px 3px 11px #00000033;
+	background-color: $secondaryColor;
+}
+
+a.view-more:hover{
+	color: $primaryColor;
+	transition: .3s;
+}

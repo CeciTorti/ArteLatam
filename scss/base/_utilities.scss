@@ -1,0 +1,29 @@
+/* Lists and general anchors */
+
+ul{
+	list-style-type: none;
+	padding: 0;
+	li a{
+		@extend %anchorStyle;
+	}
+}
+
+a{
+	@extend %anchorStyle;
+}
+
+/* Width */
+
+.w-width-90{
+	max-width: 90%;
+}
+
+.w-desk-730{
+	max-width: 730px;
+}
+
+/* Images */
+
+img {
+	max-width: 100%;
+}

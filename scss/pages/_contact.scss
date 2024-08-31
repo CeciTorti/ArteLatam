@@ -1,0 +1,29 @@
+// Contact
+
+.contact-page{
+	strong {
+		display: block;
+	}
+	form#contact-form input[type="submit"] {
+		width: 100%;
+	}
+	.contact-items{
+		i {
+			color: $primaryColor;
+		}
+		a:hover {
+			color: $primaryColor;
+			transition: .3s;
+		}
+	}
+}
+
+// Tablet + Desktop
+
+@media only screen and (min-width: 992px){
+
+	form#contact-form input[type="submit"] {
+		width: fit-content;
+	}
+
+}

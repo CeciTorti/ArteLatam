@@ -1,0 +1,61 @@
+div#intro-text-block {
+	background: $secondaryColor; 
+}
+
+div#highlights-block{
+	section.highlights-content.container h2{
+		font-weight: 500;
+	}
+	.hl-content {
+		box-shadow: 0px 9px 12px 0px rgba(159, 159, 159, 0.32);
+		background: $softBgColor;
+		border-radius: 0 0 10px 10px;
+		label {
+			@include fontSizeWeight(14px,700);
+			color: #fff;
+			background: $primaryColor;
+			padding: 2px 10px;
+			line-height: 22px;
+		}
+	}
+	article img {
+		border-radius: 10px 10px 0 0;
+	}
+}
+
+div#frase-block{
+	background-image: url(../images/home/fixed-bg/banner-fixed.png);
+	height: 230px;
+	background-attachment: fixed;
+	background-position: center;
+	p span{
+		font-weight: 600;
+		display: block;
+	}
+}
+
+div#subscribe-block{
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.082);
+	max-width: 570px;
+	p{
+		font-family: $secondaryFont;
+	}
+	.brands img {
+		max-width: 60%;
+	}
+}
+
+/* Tablet + Desktop */
+
+@media only screen and (min-width: 992px){
+
+	div#highlights-block p {
+		display: -webkit-box;
+		-webkit-line-clamp: 4;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		height: 95px;
+	}
+
+}

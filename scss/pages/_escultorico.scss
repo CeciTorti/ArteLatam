@@ -1,0 +1,65 @@
+// Escultórico
+
+.escultorico-page{
+
+	main h2{
+		@extend %h2SpecialStyle;
+	}
+
+	section.items{
+		@extend %submenus;
+		scroll-margin-top: 90px;
+	}
+
+	.escultorico-links {
+		@include sectionsMix(0 auto 30px,25px,1px solid $lightGray);
+		figure {
+			grid-row: 2;
+			margin: 0 auto 1rem;
+			img{
+				border-radius: 10px;
+			}
+		}
+		figcaption{
+			@include fontSizeWeight(12px,400);
+			color: #757575;
+			padding-top: 5px;
+		}
+	}
+
+}
+
+// Tablet + Desktop
+
+@media only screen and (min-width: 992px){
+
+	.escultorico-page{
+
+		section.items {
+			width: fit-content;
+			margin: 0 auto;
+			h2 {
+				font-size: 24px;
+			}
+		}
+	
+		.escultorico-links {
+			grid-template-areas:
+				'photo text'
+				'photo link';
+			figure {
+				grid-area: photo;
+				max-width: 270px;
+			}
+			p {
+				grid-area: text;
+				align-self: end;
+			}
+			a.view-more{
+				grid-area: link;
+			}
+		}
+
+	}
+
+}
