@@ -24,3 +24,14 @@
         }
     }
 }
+
+%alertMsg{
+    background: $AlertBg;
+    img{
+        max-width: 40px;
+    }
+    p{
+        @include fontSizeWeight(13px,700);
+        color: $secondaryColor;
+    }
+}

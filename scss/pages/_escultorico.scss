@@ -2,8 +2,12 @@
 
 .escultorico-page{
 
-	main h2{
+	section h2{
 		@extend %h2SpecialStyle;
+		i{
+			color: $mediumGray;
+			padding-right: 10px;
+		}
 	}
 
 	section.items{

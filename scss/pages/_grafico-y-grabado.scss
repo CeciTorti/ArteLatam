@@ -11,6 +11,10 @@
 		@extend %submenus;
 		h2{
 			@include fontSizeWeight(16px,900);
+			i{
+				color: $mediumGray;
+				padding-right: 10px;
+			}
 		}
 	}
 

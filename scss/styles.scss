@@ -1,30 +1,31 @@
 // Abstrasts
 
-@import 'abstracts/color-variables';
-@import 'abstracts/typography-variables';
-@import 'abstracts/extends';
-@import 'abstracts/mixins';
+@import './abstracts/color-variables';
+@import './abstracts/typography-variables';
+@import './abstracts/mixins';
+@import './abstracts/extends';
+@import './abstracts/animations';
 
 // Base
 
-@import 'base/typography';
-@import 'base/base';
-@import 'base/utilities';
-@import 'base/forms';
+@import './base/typography';
+@import './base/base';
+@import './base/utilities';
+@import './base/forms';
 
 // Components
 
-@import 'components/buttons';
+@import './components/buttons';
 
 // Layouts
 
-@import 'layouts/header';
-@import 'layouts/footer';
+@import './layouts/header';
+@import './layouts/footer';
 
 // Pages
 
-@import 'pages/home';
-@import 'pages/grafico-y-grabado';
-@import 'pages/escultorico';
-@import 'pages/audiovisual';
-@import 'pages/contact';
+@import './pages/home';
+@import './pages/grafico-y-grabado';
+@import './pages/escultorico';
+@import './pages/audiovisual';
+@import './pages/contact';
