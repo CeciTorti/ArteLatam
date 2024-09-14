@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="keywords" content="Arte precolombino latinoamericano, Tesoros arqueológicos, Grabado precolombino, Arte gráfico precolombino, Cultura mesoamericana, Iconografía indígena, Esculturas monumentales, Pueblos originarios, Historia del arte, Arte rupestre, Petroglifos, Civilizaciones andinas, Estética aborigen, Patrimonio cultural, Arqueología del arte, Turismo arqueológico">
 		<meta name="description" content="Recopilamos información sobre el arte precolombino latinoamericano: arte gráfico, grabados, esculturas, audiovisuales y obras actuales inspiradas en este legado.">
-		<link rel="shortcut icon" href="./images/identity/favico.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="../images/identity/favico.ico" type="image/x-icon">
 		<title>ArteLatam</title>
 
 		<!-- Bootstrap -->
@@ -17,6 +17,9 @@
 		
 		<!-- Animate.css -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+		<!-- Animate on Scroll -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 		<!-- Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -68,7 +71,7 @@
 		<div class="page-content audiovisual-page text-center d-flex mx-4 mx-lg-auto mb-5">
 			<main class="container">
 				<!-- Videos y documentales -->
-				<section class="videos-y-documentales audiovisual d-flex flex-column gap-4">
+				<section class="videos-y-documentales audiovisual d-flex flex-column gap-4" data-aos="fade-up" data-aos-duration="1000">
 					<h2>Videos y documentales</h2>
 					<p class="m-auto">Documentación audiovisual realizada por profesionales y especialistas que ofrecen una visión profunda y enriquecedora de las culturas y tradiciones antiguas.</p>
 					<div class="material mb-4 row">
@@ -82,7 +85,7 @@
 				</section>
 
 				<!-- Podcasts -->
-				<section class="podcasts audiovisual d-flex flex-column gap-4">
+				<section class="podcasts audiovisual d-flex flex-column gap-4" data-aos="fade-up" data-aos-duration="1000">
 					<h2>Podcasts</h2>
 					<p class="m-auto">Los podcasts de arte precolombino, presentados por estudiosos, exploran la riqueza cultural y los significados detrás de las obras de civilizaciones antiguas.</p>
 					<div class="material mb-4 row">
@@ -96,7 +99,7 @@
 				</section>
 
 				<!-- Música fusión actual -->
-				<section class="musica-fusion audiovisual d-flex flex-column gap-4">
+				<section class="musica-fusion audiovisual d-flex flex-column gap-4" data-aos="fade-up" data-aos-duration="1000">
 					<h2>Música fusión actual</h2>
 					<p class="m-auto">La música fusión que combina arte precolombino y música moderna crea un puente sonoro entre culturas, celebrando tradiciones ancestrales a través de ritmos contemporáneos.</p>
 					<div class="material row">
@@ -163,6 +166,14 @@
 
 		<!-- Bootstrap Script -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+		<!-- Animate on Scroll Script-->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+		<!-- Inicializar AOS -->
+		<script>
+			AOS.init();
+		</script>
 		
 	</body>
 </html>

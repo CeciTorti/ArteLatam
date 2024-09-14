@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="keywords" content="Arte precolombino latinoamericano, Tesoros arqueológicos, Grabado precolombino, Arte gráfico precolombino, Cultura mesoamericana, Iconografía indígena, Esculturas monumentales, Pueblos originarios, Historia del arte, Arte rupestre, Petroglifos, Civilizaciones andinas, Estética aborigen, Patrimonio cultural, Arqueología del arte, Turismo arqueológico">
 		<meta name="description" content="Recopilamos información sobre el arte precolombino latinoamericano: arte gráfico, grabados, esculturas, audiovisuales y obras actuales inspiradas en este legado.">
-		<link rel="shortcut icon" href="./images/identity/favico.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="../images/identity/favico.ico" type="image/x-icon">
 		<title>ArteLatam</title>
 		
 		<!-- Bootstrap -->
@@ -17,6 +17,9 @@
 		
 		<!-- Animate.css -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+		<!-- Animate on Scroll -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		
 		<!-- Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -66,7 +69,7 @@
 		<h1 class="my-5 fs-2 text-center">Arte escultórico prehispánico latinoamericano</h1>
 
 		<div class="page-content escultorico-page d-flex flex-column mx-4 mx-lg-auto px-lg-4 column-gap-4">
-			<section class="items rounded-3 p-4 text-center">
+			<section class="items rounded-3 p-4 text-center" data-aos="fade-up" data-aos-duration="1000">
 				<h2 class="mb-4"><i class="fa-solid fa-magnifying-glass fs-5"></i>Explora por región</h2>
 				<ul class="mb-0 mt-4 d-flex flex-wrap column-gap-2 row-gap-2 justify-content-center flex-lg-nowrap">
 					<li><a href="#asur-escultorico" class="py-2 px-3 rounded-1 d-inline-block">América del Sur</a></li>
@@ -76,7 +79,7 @@
 				</ul>
 			</section>
 
-			<main class="my-5">
+			<main class="my-5" data-aos="fade-up" data-aos-duration="1000">
 
 				<!-- Seccion America del Sur-->
 				<section id="asur-escultorico">
@@ -183,6 +186,14 @@
 
 		<!-- Bootstrap Script -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+		<!-- Animate on Scroll Script-->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+		<!-- Inicializar AOS -->
+		<script>
+			AOS.init();
+		</script>
 		
 	</body>
 </html>

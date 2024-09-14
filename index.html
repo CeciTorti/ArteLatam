@@ -17,6 +17,9 @@
 
 		<!-- Animate.css -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+		<!-- Animate on Scroll -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		
 		<!-- Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -62,7 +65,7 @@
 		</header>
 
 		<!-- Principal banner -->
-		<div id="principal-banner">
+		<div id="principal-banner" data-aos="fade-right" data-aos-duration="1000">
 			<img src="images/home/principal-banner/banner-principal-desktop.png" class="banner-desktop d-none d-md-block w-100" alt="Banner principal desktop">
 			<img src="images/home/principal-banner/banner-principal-mobile.png" class="banner-mobile d-sm-block d-md-none" alt="Banner principal mobile">
 		</div>
@@ -70,7 +73,7 @@
 		<main>
 
 			<!-- Intro text -->
-			<div id="intro-text-block" class="text-center py-5 px-4">
+			<div id="intro-text-block" class="text-center py-5 px-4" data-aos="fade-up" data-aos-duration="2000">
 				<div class="intro-text-content text-light m-auto w-desk-730">
 					<h1 class="text-light text-center fs-1 mb-4 lh-base w-width-90 m-auto">Todo lo que querés aprender sobre Arte Prehispánico Latinoamericano</h1>
 					<p class="lh-lg">Si estudiás o simplemente te gusta conocer sobre arte precolombino, <strong>¡llegaste al lugar indicado!</strong>
@@ -85,7 +88,7 @@
 					
 					<section class="highlights-content row row-gap-5 column-gap-1 flex-lg-nowrap mx-2 justify-content-center">
 					<!-- First highlight -->
-					<article class="hl-one col-lg-4">
+					<article class="hl-one col-lg-4" data-aos="fade-up" data-aos-duration="1000">
 						<img src="images/home/highlights/home-highlight-01.png" alt="Inca cueva Argentina">
 						<div class="hl-content p-4">
 							<label class="rounded-1">ARGENTINA</label>
@@ -96,7 +99,7 @@
 					</article>
 
 					<!-- Second highlight -->
-					<article class="hl-two col-lg-4">
+					<article class="hl-two col-lg-4" data-aos="fade-up" data-aos-duration="1000">
 						<img src="images/home/highlights/home-highlight-02.png" alt="Quilcayhuanca Peru">
 						<div class="hl-content p-4">
 							<label class="rounded-1">PERÚ</label>
@@ -107,7 +110,7 @@
 					</article>
 
 					<!-- Third highlight -->
-					<article class="hl-three col-lg-4">
+					<article class="hl-three col-lg-4" data-aos="fade-up" data-aos-duration="1000">
 						<img src="images/home/highlights/home-highlight-03.png" alt="Códice Bodley Mexico">
 						<div class="hl-content p-4">
 							<label class="rounded-1">MÉXICO</label>
@@ -127,13 +130,13 @@
 		<!-- Frase block -->
 		<div id="frase-block" class="frase-content d-flex align-items-center">
 
-				<p class="text-light m-auto text-center w-75 lh-lg w-desk-730">“Vinieron. Ellos tenían la Biblia y nosotros teníamos la tierra. Y nos dijeron: ‘Cierren los ojos y recen’. Y cuando abrimos los ojos, ellos tenían la tierra y nosotros teníamos la Biblia”.<span>Eduardo Galeano</span>
+				<p class="text-light m-auto text-center w-75 lh-lg w-desk-730" data-aos="flip-right" data-aos-duration="1000">“Vinieron. Ellos tenían la Biblia y nosotros teníamos la tierra. Y nos dijeron: ‘Cierren los ojos y recen’. Y cuando abrimos los ojos, ellos tenían la tierra y nosotros teníamos la Biblia”.<span>Eduardo Galeano</span>
 				</p>
 
 		</div>
 
 		<!-- Subscribe block -->
-		<div id="subscribe-block" class="subscribe-content text-center m-sm-auto mx-4 my-sm-5 my-5 px-4 py-5 rounded-4">
+		<div id="subscribe-block" class="subscribe-content text-center m-sm-auto mx-4 my-sm-5 my-5 px-4 py-5 rounded-4" data-aos="flip-up" data-aos-duration="1000">
 			<div class="brands d-flex flex-wrap flex-sm-nowrap row-gap-4 mb-4 justify-content-center align-items-center">
 				<a href="#"><img src="images/home/brands/yt-logo.png" alt="YouTube logo"></a>
 				<a href="#"><img src="images/home/brands/spotify-logo.png" alt="Spotify logo"></a>
@@ -186,6 +189,14 @@
 
 		<!-- Bootstrap Script -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	
+		<!-- Animate on Scroll Script-->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+		<!-- Inicializar AOS -->
+		<script>
+			AOS.init();
+		</script>
 
 	</body>
 </html>
